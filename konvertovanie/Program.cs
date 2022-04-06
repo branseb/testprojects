@@ -20,7 +20,8 @@ namespace konvertovanie
             //tryparse nepodarí sa konvertovať tak vypíše 0 a NEvypíše chybu
             int cislo2;
             bool konv = int.TryParse(text1, out cislo2);
-            //bool napíse false ak sa nepodarí konvertovanie-čo je tento prípad 
+            //bool napíse false ak sa nepodarí konvertovanie-čo je tento prípad
+            //bla bla
             Console.WriteLine(cislo1 + "\n" + konv);
             Console.Read();
 
