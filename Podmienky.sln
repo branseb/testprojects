@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test1.4", "test1.4\test1.4.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cvicenie", "cvicenie\cvicenie.csproj", "{CF29A129-24E0-44ED-B67D-A0F0CD913E0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "operatory cykly", "operatory cykly\operatory cykly.csproj", "{AA7E892F-CFC7-4738-99E6-9A76DEBA833E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "operatory cykly", "operatory cykly\operatory cykly.csproj", "{AA7E892F-CFC7-4738-99E6-9A76DEBA833E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticket machine", "ticket machine\ticket machine.csproj", "{9CD9862D-BCD8-4050-A86C-5100AE3BCAAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{AA7E892F-CFC7-4738-99E6-9A76DEBA833E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA7E892F-CFC7-4738-99E6-9A76DEBA833E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA7E892F-CFC7-4738-99E6-9A76DEBA833E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD9862D-BCD8-4050-A86C-5100AE3BCAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD9862D-BCD8-4050-A86C-5100AE3BCAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD9862D-BCD8-4050-A86C-5100AE3BCAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD9862D-BCD8-4050-A86C-5100AE3BCAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
