@@ -1,32 +1,44 @@
 ﻿namespace Phonebook
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string phonebook = "phonebook.txt";
+            var phonebook = "phonebook.txt";
             File.AppendAllText(phonebook,"");
-            Console.WriteLine("Phonebook"+Environment.NewLine+"Press \"n\" for New contact or \"o\" for open Phonebook");
+            Console.WriteLine("Phonebook"+Environment.NewLine+"Press \"n\" for New contact , \"o\" for open Phonebook or  \"s\" for search coctact");
             while (true)
             {
                
-                char select = Console.ReadKey().KeyChar;
+                var select = Console.ReadKey().KeyChar;
                 Console.WriteLine();
-                string[] books = File.ReadAllLines(phonebook);
-                var fltere = books.Where(row => row.Contains("er"));
+                
                 if (select == 'n')
                 {
                     Console.WriteLine("Whrite The Name:");
-                    string newcontname = Console.ReadLine();
+                    var newcontname = Console.ReadLine();
                     Console.WriteLine("Number on {0} ?", newcontname);
-                    string newcontnum = Console.ReadLine();
+                    var newcontnum = Console.ReadLine();
                     File.AppendAllText(phonebook, newcontname + " - " + newcontnum + Environment.NewLine);
                     Console.WriteLine("Saved!");
                 }
                 else if (select == 'o')
                 {
-                    Console.Write("Contacts:" + Environment.NewLine + string.Join(Environment.NewLine, fltere)); 
-                    
+                    //Console.Write("Contacts:" + Environment.NewLine + File.ReadAllLines(phonebook));
+                    foreach (var line in File.ReadAllLines(phonebook))
+                    {
+                        Console.WriteLine(line);
+                    }
+
+
+                }
+                else if (select == 's')
+                {
+                    Console.WriteLine("Search?");
+                    var search = Console.ReadLine();
+                    var books = File.ReadAllLines(phonebook);
+                    var filtere = books.Where(row => row.ToLower().Contains(search));
+                    Console.Write("Contacts:" + Environment.NewLine + string.Join(Environment.NewLine, filtere));
                 }
 
                 else
